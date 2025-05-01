@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../IMAGENES/fondo.png'); /* La imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+    opacity: 76%; /* Hace la imagen de fondo un 70% de opacidad */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que cubra toda la pantalla */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    border-radius: 10px;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.search-container, .filters, .results {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.search-container input {
+    padding: 12px 20px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 2px solid #007bff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filters select {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 2px solid #007bff;
+    margin-left: 10px;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.filters select:hover {
+    border-color: #0056b3;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item h3 {
+    margin: 15px;
+    font-size: 1.4em;
+    color: #007bff;
+}
+
+.item p {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 45%;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    .filters select {
+        width: 70%;
+    }
+}

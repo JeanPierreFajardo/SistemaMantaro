@@ -1,0 +1,290 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  /* Encabezado con imagen de fondo */
+  .hero {
+    position: relative;
+    height: 60vh;
+    background: url('imagen-de-fondo.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn-primary {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #ff4f00;
+  }
+  
+  /* Sección de información de hospedaje */
+  .hospedaje-info {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .hospedaje-info .hospedaje-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+ /* Carrusel de imágenes */
+.image-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+.image-slider {
+    display: flex;
+    width: 100%;  /* Aquí se ajusta para que solo ocupe el 100% del contenedor */
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.image-slider .slide {
+    width: 100%; /* Cada imagen ocupa el 100% del contenedor, mostrando solo una */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para la descripción de la ubicación */
+.description {
+    flex: 2;
+    padding-left: 30px;
+    padding-right: 30px;  /* Añadido para mayor separación */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Alinea el texto verticalmente */
+    align-items: center;      /* Centra el contenido horizontalmente */
+    text-align: center;       /* Asegura que el texto esté centrado */
+    margin-top: 60px;         /* Se agrega un pequeño margen superior */
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;     /* Mayor espacio entre el título y el contenido */
+    color: #333;
+    font-weight: bold;       /* Hace que el título resalte más */
+}
+
+.description p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;        /* Aumenta el espacio entre las líneas para mayor legibilidad */
+    margin-top: 10px;        /* Añade un pequeño margen superior para separar la dirección del texto */
+    max-width: 600px;        /* Controla el ancho máximo del texto */
+    margin: 10px auto;          /* Centra el párrafo */
+}
+
+/* Estilo para la dirección específica */
+.description .direccion {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #ff7f00;           /* Color para darle énfasis */
+}
+
+  
+  /* Sección de servicios */
+  .servicios {
+    padding: 40px;
+    background-color: #eeeeee;
+    text-align: center;
+  }
+  
+  .servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .servicios-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .servicio-item {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .servicio-item img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .servicio-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Sección de testimonios */
+  .testimonios {
+    padding: 40px;
+    background-color: #ff7f00;
+    color: white;
+    text-align: center;
+  }
+  
+  .testimonios-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonio-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    background-color: #ff4f00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonio-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonio-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Sección de reserva */
+  .reserva {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .reserva h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .reserva .form-group {
+    margin: 15px 0;
+  }
+  
+  .reserva label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .reserva input,
+  .reserva select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .reserva button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reserva button:hover {
+    background-color: #ff4f00;
+  }
+  
+/* Animación de la transición */
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Aplicar animación al contenedor de las imágenes */
+.image-slider {
+  animation: slideAnimation 5s infinite;
+}
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  animation: fadeOut 5s forwards;
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+.alert-error {
+  background-color: #dc3545;
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
